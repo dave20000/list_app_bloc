@@ -17,11 +17,16 @@ class HomeBody extends StatelessWidget {
           title: const Text(
             "Lord of the ring Characters",
             style: TextStyle(
+              fontSize: 22,
               color: Colors.black,
+              fontWeight: FontWeight.bold,
             ),
           ),
           centerTitle: true,
           bottom: TabBar(
+            indicatorWeight: 6,
+            indicatorColor: Colors.blueGrey,
+            labelPadding: const EdgeInsets.only(bottom: 12),
             tabs: [
               Text(
                 Race.human.name.capitalize(),
